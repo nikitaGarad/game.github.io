@@ -1,0 +1,33 @@
+
+<style type="text/css">
+    .abc{
+        float: left;
+        height: 10px;
+        width: 10px;
+        background-color: red;
+    }
+</style>
+
+<script type="text/javascript">
+    for(i=0; i<10000; i++)
+
+   {
+       document.write ("<div class='abc' onmouseover='change_bg(this)'></div>")
+   }
+   function change_bg(elmt)
+   {
+        elmt.style.backgroundColor="blue";
+        setTimeout(function() {
+            elmt.style.backgroundColor="red";
+        }, 2000);
+
+}
+
+
+
+</script>
+
+
+
+
+
